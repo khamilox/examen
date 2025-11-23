@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h2>Ejercicio 2 - Nombres</h2>
+
+<form method="post">
+    <label>Nombre 1:</label>
+    <input type="text" name="nombre1" required><br>
+
+    <label>Nombre 2:</label>
+    <input type="text" name="nombre2" required><br>
+
+    <label>Nombre 3:</label>
+    <input type="text" name="nombre3" required><br>
+
+    <button type="submit">Calcular</button>
+</form>
+
+{% if resultado %}
+    <h3>Resultado</h3>
+    <p>Nombre más largo: {{ resultado.nombre }}</p>
+    <p>Cantidad de caracteres: {{ resultado.largo }}</p>
+{% endif %}
+{% endblock %}
+
