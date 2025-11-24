@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="titulo-neon">
+        <h2>Aplicación Examen Flask</h2>
+        <p class="descripcion-mejorada">
+            Selecciona un ejercicio para continuar.
+        </p>
+    </div>
+
+    <div class="botonera">
+        <a class="btn" href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+        <a class="btn" href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+    </div>
+
+</div>
+
+</body>
+</html>

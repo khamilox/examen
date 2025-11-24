@@ -1,0 +1,101 @@
+/* Fondo general estilo neon */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #1a2b4c 0, #050816 45%, #02030a 100%);
+    color: #f5f7ff;
+}
+
+/* Contenedor central */
+.contenedor {
+    max-width: 900px;
+    margin: 70px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #e6f1ff;
+    letter-spacing: 0.5px;
+}
+
+.subtitulo,
+.descripcion {
+    color: #a7b8d8;
+    margin-top: 5px;
+}
+
+/* Botonera inicio */
+.botonera {
+    margin-top: 35px;
+}
+
+/* Botón principal estilo neon */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin: 10px;
+    background: linear-gradient(135deg, #00b4ff, #0078ff);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid #39d5ff;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 180, 255, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 18px rgba(0, 220, 255, 0.9);
+    background: linear-gradient(135deg, #19d2ff, #1599ff);
+}
+
+/* Tarjeta blanca para formularios y resultados */
+.formulario,
+.tarjeta {
+    margin-top: 30px;
+    display: inline-block;
+    text-align: left;
+    background: rgba(8, 12, 26, 0.95);
+    padding: 22px 28px;
+    border-radius: 14px;
+    box-shadow:
+        0 0 0 1px rgba(90, 130, 255, 0.2),
+        0 16px 30px rgba(0, 0, 0, 0.7);
+    min-width: 320px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #d5e1ff;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #3f4f7d;
+    background-c
+
+
+.link-volver {
+    display: inline-block;
+    margin-top: 15px;
+    color: #099cec;
+    text-decoration: none;
+}
+
+.link-volver:hover {
+    text-decoration: underline;
+}

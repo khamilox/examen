@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Pinturas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="titulo-neon">
+        <h2>Ejercicio 1 — Cálculo de descuento en pinturas</h2>
+        <p class="descripcion-mejorada">
+            Ingrese su nombre, edad y cantidad de tarros de pintura. Cada tarro cuesta <strong>$9.000</strong>.
+        </p>
+    </div>
+
+    <form method="POST" class="formulario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Edad:</label>
+        <input type="number" name="edad" min="1" required>
+
+        <label>Cantidad de tarros de pintura:</label>
+        <input type="number" name="tarros" min="1" required>
+
+        <button type="submit" class="btn">Calcular total</button>
+    </form>
+
+    <a href="{{ url_for('home') }}" class="link-volver">Volver al menú principal</a>
+
+</div>
+
+</body>
+</html>
